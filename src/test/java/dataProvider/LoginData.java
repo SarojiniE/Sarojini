@@ -6,8 +6,8 @@ import com.clearcode.utils.ExcelUtils;
 public class LoginData {
 	int a=2;
 	@DataProvider
-	public Object[][] negativeLogin(){
-		return ExcelUtils.getData("TestData.xls", "NegativeLogin");
+	public Object[][] contactForm(){
+		return ExcelUtils.getData("TestData.xls", "RealEstateData");
 	}
 	
 	@DataProvider
