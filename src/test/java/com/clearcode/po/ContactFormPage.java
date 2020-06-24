@@ -12,6 +12,6 @@ public class ContactFormPage {
 	public static By subject_ip = By.name("subject");
 	public static By msg_ip = By.name("id:comments");
 	public static By send_btn = By.xpath("//input[@value='Send']");
-	public static By submit_msg = By.className("wpcf7-response-output wpcf7-display-none wpcf7-mail-sent-ng");
-	public static By submit_errormsg = By.className("wpcf7-response-output wpcf7-display-none wpcf7-validation-errors");
+	public static By submit_msg = By.xpath("//div[text()='There was an error trying to send your message. Please try again later.']");
+	public static By submit_errormsg = By.xpath("//div[text()='One or more fields have an error. Please check and try again.']");
 }
