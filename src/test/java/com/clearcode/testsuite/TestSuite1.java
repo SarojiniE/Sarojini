@@ -41,22 +41,22 @@ public class TestSuite1 extends TestSetup{
 		//wdu.type(ContactFormPage.msg_ip, "looking for an apartments");
 	}
 	
-//	@Test(enabled=true,priority=2,dataProvider="contactForm1",dataProviderClass=LoginData.class)
-//	public void contactForm1(String name, String email, String subject, String msg) throws InterruptedException {
-//		wdu.click(HomePage.blog_btn);
-//		wdu.click(HomePage.dropUs_lnk);
-//		wdu.type(ContactFormPage.name_ip, name);
-//		wdu.type(ContactFormPage.email_ip, email);
-//		wdu.type(ContactFormPage.subject_ip, subject);
-//		wdu.type(ContactFormPage.msg_ip, msg);
-//		wdu.click(ContactFormPage.send_btn);
-//		wdu.assertText(ContactFormPage.submit_errormsg, "One or more fields have an error. Please check and try again.");
-//		//wdu.exit();
-//		//wdu.type(ContactFormPage.name_ip, "manzoor111");
-//		//wdu.type(ContactFormPage.email_ip, "alex@gmail1111.com");
-//		//wdu.type(ContactFormPage.subject_ip, "apartments");
-//		//wdu.type(ContactFormPage.msg_ip, "looking for an apartments");
-//	}
+	@Test(enabled=true,priority=2,dataProvider="contactForm1",dataProviderClass=LoginData.class)
+	public void contactForm1(String name, String email, String subject, String msg) throws InterruptedException {
+		wdu.click(HomePage.blog_btn);
+		wdu.click(HomePage.dropUs_lnk);
+		wdu.type(ContactFormPage.name_ip, name);
+		wdu.type(ContactFormPage.email_ip, email);
+		wdu.type(ContactFormPage.subject_ip, subject);
+		wdu.type(ContactFormPage.msg_ip, msg);
+		wdu.click(ContactFormPage.send_btn);
+		wdu.assertText(ContactFormPage.submit_errormsg, "One or more fields have an error. Please check and try again.");
+		//wdu.exit();
+		//wdu.type(ContactFormPage.name_ip, "manzoor111");
+		//wdu.type(ContactFormPage.email_ip, "alex@gmail1111.com");
+		//wdu.type(ContactFormPage.subject_ip, "apartments");
+		//wdu.type(ContactFormPage.msg_ip, "looking for an apartments");
+	}
 	
 	
 	//@Test(dataProvider="SearchPatient",dataProviderClass=LoginData.class)

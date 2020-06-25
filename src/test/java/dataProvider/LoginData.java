@@ -9,10 +9,10 @@ public class LoginData {
 	public Object[][] contactForm(){
 		return ExcelUtils.getData("TestData.xls", "RealEstateData");
 	}
-//	@DataProvider
-//	public Object[][] contactForm1(){
-//		return ExcelUtils.getData("TestData.xls", "RealEstateData1");
-//	}
+	@DataProvider
+	public Object[][] contactForm1(){
+		return ExcelUtils.getData("TestData.xls", "RealEstateData1");
+	}
 	@DataProvider
 	public Object[][] CreatePatient(){
 		return new Object[][] { 
